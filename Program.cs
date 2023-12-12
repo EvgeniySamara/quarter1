@@ -31,12 +31,16 @@
 
 
      Console.WriteLine("Результат:");    
-     int count = 0
+     int count = 0;
    for(int i = 0; i < stringlist.Length; i++)
     {
         if (stringlist[i].Length<=3)
-        
-      
+        {
+        result[count] = stringlist[i];
+        System.Console.Write($"{result[count]} ");
+        count++;
+
+        }
     }
         
   
