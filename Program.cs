@@ -19,20 +19,14 @@
  
      return array;
     }
-
-    Console.WriteLine("Введите размерность массива:");
-    int len = Convert.ToInt32(Console.ReadLine());
-
-     string [] stringlist = new string[len];
-     string [] result = new string[len];
-     
-
-     stringlist = arrinput(len);
-
-
-     Console.WriteLine("Результат:");    
+    
+    static void resultproc (string [] stringlist)
+    {
+      
      int count = 0;
-   for(int i = 0; i < stringlist.Length; i++)
+     string [] result = new string[stringlist.Length];
+    Console.WriteLine("Cтроки длина которых меньше, либо равна 3 символам:");  
+    for(int i = 0; i < stringlist.Length; i++)
     {
         if (stringlist[i].Length<=3)
         {
@@ -42,6 +36,20 @@
 
         }
     }
+    }
+
+    Console.WriteLine("Введите размерность массива:");
+    int len = Convert.ToInt32(Console.ReadLine());
+
+   ///  string [] stringlist = new string[len];
+  
+     
+
+    
+     resultproc (arrinput(len));
+
+
+  
         
   
 
