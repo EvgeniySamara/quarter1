@@ -24,9 +24,10 @@
     {
       
      int count = 0;
-     string [] result = new string[stringlist.Length];
+     int len = stringlist.Length;
+     string [] result = new string[len];
     Console.WriteLine("Cтроки длина которых меньше, либо равна 3 символам:");  
-    for(int i = 0; i < stringlist.Length; i++)
+    for(int i = 0; i < len; i++)
     {
         if (stringlist[i].Length<=3)
         {
